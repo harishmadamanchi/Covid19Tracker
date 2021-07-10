@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covid Tracker</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+
+    <style>
+        @media(min-width: 576px) {
+            .covidImg {
+                width: 20%;
+                height: 20%;
+            }    
+        }
+        .covidImg {
+            width: 10%;
+            height: 10%;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="heading">
+            <div class="display-1 text-center">C<span><img src="covid.png" alt="Covid" class="img-fluid covidImg"></span>VID - 19</div>
+        </div>
+
+        <section class="allIndia mt-3">
+            <label for="stateSelect">Choose the state</label>
+            <select class="custom-select" id="stateSelect">
+                <!-- options come here -->
+              </select>
+        </section>
+
+        <section class="stateWiseCounts mt-3">
+            <div class="row justify-content-around">
+                <div class="col-3 border rounded">
+                    <div class="counter h1" id="infected">0</div>
+                    <h5>Total Infected</h5>
+                </div>
+                <div class="col-3 border rounded">
+                    <div class="counter h1" id="deaths">0</div>
+                    <h5>Total Deaths</h5>
+                </div>  
+                <div class="col-3 border rounded">
+                    <div class="counter h1" id="recovered">0</div>
+                    <h5>Total Recovered</h5>
+                </div>  
+            </div>
+        </section>
+
+        <section id="table" class="mt-3">
+
+        </section>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
